@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Web Page with HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    header, main, footer {
+      padding: 1em;
+      border-bottom: 1px solid #ccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      margin-top: 1em;
+      padding: 1em;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.2em;
+    }
+    video, img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced Web Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and a complete HTML5 form.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Top Skills</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>UI/UX Design</li>
+        <li>Database Management</li>
+      </ul>
+
+      <h3>Steps to Build a Website</h3>
+      <ol>
+        <li>Plan the layout</li>
+        <li>Write the HTML/CSS</li>
+        <li>Add interactivity with JavaScript</li>
+        <li>Deploy to the web</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Project Overview Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Status</th>
+            <th>Deadline</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>Completed</td>
+            <td>June 2025</td>
+          </tr>
+          <tr>
+            <td>Mobile App UI</td>
+            <td>In Progress</td>
+            <td>August 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media Section</h2>
+      <img src="https://via.placeholder.com/600x300" alt="Sample placeholder image">
+
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Contact and Signup Form</h2>
+      <form action="#" method="POST" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fname">First Name *</label>
+          <input type="text" id="fname" name="fname" required minlength="2" placeholder="John">
+
+          <label for="lname">Last Name *</label>
+          <input type="text" id="lname" name="lname" required minlength="2" placeholder="Doe">
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username *</label>
+          <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9]{5,15}$" 
+                 title="5–15 letters or digits only" placeholder="john123">
+
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="••••••">
+
+          <label for="role">Role</label>
+          <select id="role" name="role">
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>
+            <input type="checkbox" name="newsletter" checked>
+            Subscribe to newsletter
+          </label>
+
+          <label for="bio">Short Bio</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+
+          <label for="readonly-field">Referral Code</label>
+          <input type="text" id="readonly-field" value="PLP2025" readonly>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebTech Classroom Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
